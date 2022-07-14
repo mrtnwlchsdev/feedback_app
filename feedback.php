@@ -2,20 +2,9 @@
 
 <?php 
 
-$feedback_content = [
-    [
-        'id' => '1',
-        'name' => 'Brad Traversy',
-        'email' => 'brad@mail.com',
-        'feedback' => 'I Love PHP and JavaScript'
-    ],
-    [
-        'id' => '2',
-        'name' => 'Ada Lovelace',
-        'email' => 'ada@mail.com',
-        'feedback' => 'I Love PHP and JavaScript'
-    ]
-];
+$sql = 'SELECT * FROM user';
+$result = mysqli_query($conn,$sql);
+$feedback_content = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 ?>
 
