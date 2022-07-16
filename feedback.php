@@ -19,7 +19,7 @@ $feedback_content = mysqli_fetch_all($result, MYSQLI_ASSOC);
         <div class="card my-3 mx-auto w-75">
             <div class="card-body d-flex flex-column">
                 <p class="lead"><?php echo $item['feedback']; ?></p>
-                <span class="h3. Bootstrap text-secondary">By <?php echo $item['name']; ?></span>
+                <span class="h3. Bootstrap text-secondary">By <?php echo $item['first_name']; ?></span>
             </div>
         </div>
     <?php endforeach; ?>
